@@ -17,24 +17,21 @@ export class DropdownComponent implements OnInit {
 
   ngOnInit() {
     this.dropdownList = [
-      { item_id: 1, item_text: 'Mumbai' },
-      { item_id: 2, item_text: 'Bangaluru' },
-      { item_id: 3, item_text: 'Pune' },
-      { item_id: 4, item_text: 'Navsari' },
-      { item_id: 5, item_text: 'New Delhi' }
+      { item_id: 1, item_text: 'Todos' },
+      { item_id: 2, item_text: 'Desenvolvimento' },
+      { item_id: 3, item_text: 'Testes' },
+      { item_id: 4, item_text: 'DevOps' },
     ];
-    this.selectedItems = [
-      { item_id: 3, item_text: 'Pune' },
-      { item_id: 4, item_text: 'Navsari' }
-    ];
+    this.selectedItems = [...this.dropdownList];
     this.dropdownSettings = {
       singleSelection: false,
       idField: 'item_id',
       textField: 'item_text',
-      selectAllText: 'Select All',
-      unSelectAllText: 'UnSelect All',
+      selectAllText: 'Todos',
+      unSelectAllText: 'Todos',
       itemsShowLimit: 1,
-      allowSearchFilter: true
+      allowSearchFilter: true,
+      enableCheckAll: false
     } as IDropdownSettings;
     console.log('Dropdown settings initialized:', this.dropdownSettings);
   }
