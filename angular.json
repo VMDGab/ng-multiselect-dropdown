@@ -32,7 +32,8 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/app/ng-multiselect-dropdown.theme.scss",
+            "src/styles.scss"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -103,5 +104,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "2db7a7bd-3806-48f9-8e2c-bcef12d26a84"
   }
 }
